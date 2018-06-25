@@ -1,0 +1,9 @@
+.show {
+	  display: block;
+    text-align: right;
+    width: 80%;
+    margin: auto;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+	}
