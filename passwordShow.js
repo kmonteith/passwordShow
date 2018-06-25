@@ -1,4 +1,4 @@
-class passwordView {
+		class passwordView {
 			constructor(passwordElement) {
 				this.password = document.getElementById(passwordElement);
 				this.showElement = document.createElement("SPAN");
@@ -7,8 +7,8 @@ class passwordView {
 				this.password.insertAdjacentElement('beforebegin',this.showElement); 
 				this.showHide();
 			}
-			show() { this.password.setAttribute('type', 'text'); }
-			hide() { this.password.setAttribute('type', 'password'); }
+			show() { this.password.setAttribute('type', 'text'); this.showElement.innerHTML =  "hide password";}
+			hide() { this.password.setAttribute('type', 'password'); this.showElement.innerHTML =  "show password";}
 			showHide() {
 				var visible = 0;
 				var t = this;
